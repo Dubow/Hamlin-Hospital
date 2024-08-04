@@ -16,10 +16,39 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">INSIGHTS</a></li>
+                    <li><a href="#"><strong style="color: #198c6d;">HOME</strong></a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li class="dropdown">
+                        <a href="#">SERVICES <strong style="color: #198c6d;">+</strong></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">MAIN SERVICES</a>
+                                <ul class="nested-dropdown">
+                                    <li><a href="#">Inpatient Services</a></li><hr>
+                                    <li><a href="#">Outpatient Services</a></li><hr>
+                                    <li><a href="#">Critical Care Unit</a></li><hr>
+                                    <li><a href="#">Theatre Services</a></li><hr>
+                                    <li><a href="#">Pharmacy</a></li><hr>
+                                    <li><a href="#">Laboratory Services</a></li><hr>
+                                    <li><a href="#">Maternity Services</a></li><hr>
+                                    <li><a href="#">Radiology</a></li>
+                                </ul>
+                            </li><hr>
+                            <li><a href="#">OTHER DEPARTMENTS</a>
+                                <ul class="nested-dropdown">
+                                    <li><a href="#">Specialist Clinic</a></li><hr>
+                                    <li><a href="#">Dental Department</a></li><hr>
+                                    <li><a href="#">Optical Clinic</a></li><hr>
+                                    <li><a href="#">ENT (Ear, Nose and Throat)</a></li><hr>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">INSIGHTS <strong style="color: #198c6d;">+</strong></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">GALLERY</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -30,7 +59,45 @@
             </div>
 
         </div> 
+        <div class="front-view">
+            <img src="/assets/WhatsApp Image 2024-08-03 at 13.15.13 (1).jpeg" alt="">
+        </div>
+
+        <div class="main-content">
+            <div class="content">
+                <h1>Healthcare that puts you first.</h1><br>
+                <p>Hamlin Hospital, a cutting-edge healthcare facility, is steadfast in delivering comprehensive medical services to patients. Our devoted team of certified and experienced healthcare practitioners delivers curative, preventive, and surgical treatments, ensuring enhanced community health within a convenient and comfortable environment.</p><br><br>
+                <li><span>&#10003;</span>100% Expert Doctors</li>
+                <li><span>&#10003;</span>Well Equipped Laboratory</li>
+                <li><span>&#10003;</span>Instant Operation & Appointment</li>
+                <li><span>&#10003;</span>Specialized Consultant Clinics</li>
+            </div>
+            <!-- Book Appointment Form -->
+            <div class="appointment-form">
+                <h2>Book an Appointment</h2>
+                <form action="#" method="post">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <!-- <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required> -->
+
+                    <label for="message">Type Message:</label>
+                    <input type="text" id="message" name="message" required>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
     </div>
     <!-- <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> -->
+
+    <script src="/JS/index.js"></script>
 </body>
 </html>
