@@ -164,7 +164,7 @@ ul li a:hover {
 
 .front-view img {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
 }
 
 .main-content {
@@ -709,5 +709,226 @@ a:hover {
 
     .stat-item, .mission, .vision {
         margin: 10px 0;
+    }
+}
+
+/* Media Queries for Small Screens */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .icon img {
+        height: 50px;
+        padding-left: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li {
+        width: 100%;
+        text-align: left;
+    }
+
+    ul li a {
+        padding: 10px 0;
+        text-align: left;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .srch {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 20px;
+        display: block;
+    }
+
+    .service {
+        margin-bottom: 20px;
+    }
+
+    .appointment-form {
+        width: 100%;
+    }
+
+    .services-section h1,
+    .departments h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .department-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .department {
+        margin-bottom: 20px;
+    }
+
+    /* Footer adjustments */
+    .hospital-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .hospital-section {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .hospital-section ul {
+        padding-left: 20px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+/* Additional media query for even smaller screens (like mobile phones) */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .icon img {
+        height: 40px;
+    }
+
+    ul li a {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    .appointment-form input,
+    .appointment-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .main-content h1 {
+        font-size: 20px;
+    }
+
+    .services-section h1,
+    .departments h1 {
+        font-size: 20px;
+    }
+
+    .care-item h3 {
+        font-size: 18px;
+    }
+
+    .care-item p {
+        font-size: 14px;
+    }
+}
+
+/* contact responsive */
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-item {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .info-item h4 {
+        font-size: 1.1em;
+    }
+
+    .info-item p {
+        font-size: 0.9em;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form h3 {
+        font-size: 1.5em;
+    }
+
+    .form-group label {
+        font-size: 0.9em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .btn-submit {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .map-container {
+        margin-top: 20px;
+    }
+
+    .map-container h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section h2 {
+        font-size: 1.6em;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form h3 {
+        font-size: 1.3em;
+    }
+
+    .form-group label {
+        font-size: 0.8em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    .btn-submit {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+
+    .map-container h3 {
+        font-size: 1.3em;
     }
 }
