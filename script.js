@@ -12,7 +12,7 @@ app.use(express.json());
 console.log('EMAIL_USER:', process.env.EMAIL_USER);
 console.log('EMAIL_PASS:', process.env.EMAIL_PASS);
 
-app.get('/', (req, res) => {
+app.get('/contact', (req, res) => {
     res.sendFile(__dirname + '/public/Hamlin/contact.html');
 });
 
