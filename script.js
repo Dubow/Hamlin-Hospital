@@ -8,10 +8,6 @@ const app = express();
 app.use(express.static('public'));
 app.use(express.json());
 
-// Check if environment variables are loaded
-console.log('EMAIL_USER:', process.env.EMAIL_USER);
-console.log('EMAIL_PASS:', process.env.EMAIL_PASS);
-
 app.get('/contact', (req, res) => {
     res.sendFile(__dirname + '/public/Hamlin/contact.html');
 });
