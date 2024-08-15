@@ -31,4 +31,29 @@ contactForm.addEventListener('submit', (e) => {
         }
     }
     xhr.send(JSON.stringify(formData))
-})
+});
+
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+};
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+};
+
+function performSearch() {
+    const searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
+
+    if (searchQuery === "") {
+        alert("Please enter a search term.");
+        return;
+    }
+
+    // Simple example: Redirect to Google search results for your website
+    const searchUrl = `http://localhost:3000/home`;
+    window.location.href = searchUrl;
+
+    // Alternatively, you can handle the search within your website
+    // For example, you might filter or search through your site's content dynamically
+}

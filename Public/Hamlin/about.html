@@ -14,19 +14,34 @@
             </div>
 
             <div class="menu">
-                <ul>
-                    <li><a href="home"><strong style="color: #198c6d;">HOME</strong></a></li>
-                    <li><a href="about">ABOUT US</a></li>
-                    <li><a href="#services">SERVICES</a></li>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="home">HOME</a></li><hr>
+                    <li><a href="about">ABOUT US</a></li><hr>
+                    <li><a href="home">SERVICES</a></li><hr>
                     <li class="dropdown">
                         <a href="#">INSIGHTS <strong style="color: #198c6d;">+</strong></a>
                         <ul class="dropdown-content">
                             <li><a href="gallery.html">GALLERY</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact">CONTACT US</a></li>
+                    <li><a href="contact">CONTACT US</a></li><hr>
+                </ul>
+                <ul>
+                    <li class="hideOnMoble"><a href="home"><strong style="color: #198c6d;">HOME</strong></a></li>
+                    <li class="hideOnMoble"><a href="about">ABOUT US</a></li>
+                    <li class="hideOnMoble"><a href="home">SERVICES</a></li>
+                    <li class="hideOnMoble" class="dropdown">
+                        <a href="#">INSIGHTS <strong style="color: #198c6d;">+</strong></a>
+                        <ul class="dropdown-content">
+                            <li><a href="gallery.html">GALLERY</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMoble"><a href="contact">CONTACT US</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </div>
+            
 
             <div class="search">
                 <input class="srch" type="search" name="" placeholder="Type To text">
@@ -136,5 +151,7 @@
             <p>Copyright © 2024 Hamlin Hospital | All Rights Reserved.</p>
         </footer>
     </div>
+
+    <script src="/JS/index.js"></script>
 </body>
 </html>
