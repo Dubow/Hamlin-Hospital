@@ -50,10 +50,7 @@ function performSearch() {
         return;
     }
 
-    // Simple example: Redirect to Google search results for your website
+    // Simple example: Redirect to Google search results for website
     const searchUrl = `http://localhost:3000/home`;
     window.location.href = searchUrl;
-
-    // Alternatively, you can handle the search within your website
-    // For example, you might filter or search through your site's content dynamically
 }
