@@ -16,7 +16,7 @@ app.get('/about', (req, res) => {
     res.sendFile(__dirname + '/public/Hamlin/about.html');
 });
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/Hamlin/index.html');
 });
 
