@@ -7,6 +7,7 @@ const app = express();
 // Middleware to parse JSON bodies
 app.use(express.static('public'));
 app.use(express.json());
+app.use('/css',express.static(__dirname +'/css'));
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/Hamlin/index.html');
