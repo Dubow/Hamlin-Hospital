@@ -762,9 +762,12 @@ a:hover {
         font-size: 0.9em;
         line-height: 1.4;
         margin-bottom: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     .content h1{
         font-weight: 900;
+        padding-top: 0px;
     }
     .content li{
         margin-bottom: 6px;
