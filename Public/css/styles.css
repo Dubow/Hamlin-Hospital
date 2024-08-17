@@ -758,6 +758,17 @@ a:hover {
         padding: 0px;
         display: block;
     }
+    .content p{
+        font-size: 0.9em;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+    .content h1{
+        font-weight: 900;
+    }
+    .content li{
+        margin-bottom: 6px;
+    }
 
     .service {
         margin-bottom: 20px;
