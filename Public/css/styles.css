@@ -714,8 +714,10 @@ a:hover {
 
 /* Media Queries for Small Screens */
 @media only screen and (max-width: 768px) {
+    .main {
+        padding-top: 90px;
+    }
     
-
     .icon img {
         height: 50px;
         padding-left: 0;
@@ -753,7 +755,7 @@ a:hover {
     }
 
     .main-content {
-        padding: 20px;
+        padding: 0px;
         display: block;
     }
 
@@ -785,11 +787,11 @@ a:hover {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px;
+        padding: 12px;
     }
 
     .hospital-section {
-        margin-bottom: 20px;
+        margin-bottom: 4px;
         width: 100%;
     }
 
@@ -806,6 +808,7 @@ a:hover {
 @media only screen and (max-width: 480px) {
     .navbar {
         padding: 10px;
+        position: absolute;
     }
 
     .icon img {
@@ -821,7 +824,7 @@ a:hover {
     .appointment-form input,
     .appointment-form button {
         font-size: 14px;
-        padding: 10px;
+        padding: 6px;
     }
 
     .main-content h1 {
@@ -841,7 +844,7 @@ a:hover {
         font-size: 14px;
     }
     .front-view img{
-        height:20vh;
+        height:25vh;
     }
 }
 
