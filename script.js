@@ -22,8 +22,16 @@ app.get('/contact', (req, res) => {
     res.sendFile(__dirname + '/public/Hamlin/contact.html');
 });
 
+app.get('/blog', (req, res) => {
+    res.sendFile(__dirname + '/public/Hamlin/blogs.html');
+});
+
+app.get('/gallery', (req, res) => {
+    res.sendFile(__dirname + '/public/Hamlin/index.html');
+});
+
 app.get('/about', (req, res) => {
-    res.sendFile(__dirname + '/public/Hamlin/about.html');
+    res.sendFile(__dirname + '/public/Hamlin/gallery.html');
 });
 
 
