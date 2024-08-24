@@ -6,7 +6,7 @@ const app = express();
 
 // Middleware to parse JSON bodies
 app.use(express.static('public'));
-app.use(express.json());
+app.use(express.json()); //for handling json data
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
@@ -22,7 +22,7 @@ app.get('/contact', (req, res) => {
     res.sendFile(__dirname + '/public/Hamlin/contact.html');
 });
 
-app.get('/blog', (req, res) => {
+app.get('/blogs', (req, res) => {
     res.sendFile(__dirname + '/public/Hamlin/blogs.html');
 });
 
@@ -33,7 +33,6 @@ app.get('/gallery', (req, res) => {
 app.get('/about', (req, res) => {
     res.sendFile(__dirname + '/public/Hamlin/gallery.html');
 });
-
 
 app.post('/', (req, res) => {
     console.log(req.body);

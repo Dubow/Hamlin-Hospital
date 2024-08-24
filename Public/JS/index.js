@@ -54,3 +54,44 @@ function performSearch() {
     const searchUrl = `http://localhost:3000/home`;
     window.location.href = searchUrl;
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const submitBtn = document.getElementById('submitBtn');
+    console.log('Submit Button:', submitBtn); // Check if this logs the button element
+
+    if (submitBtn) {
+        submitBtn.addEventListener('click', function () {
+            console.log('Button clicked'); // Check if this logs when the button is clicked
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+            const imageInput = document.getElementById('image');
+
+            if (title && content && imageInput.files.length > 0) {
+                const reader = new FileReader();
+                reader.onload = function () {
+                    const imageSrc = reader.result;
+                    const article = document.createElement('div');
+                    article.classList.add('article');
+
+                    article.innerHTML = `
+                        <img src="${imageSrc}" alt="Article Image">
+                        <h2>${title}</h2>
+                        <p>${content}</p>
+                    `;
+
+                    document.getElementById('articles').appendChild(article);
+
+                    // Clear input fields after posting
+                    document.getElementById('title').value = '';
+                    document.getElementById('content').value = '';
+                    document.getElementById('image').value = '';
+                };
+                reader.readAsDataURL(imageInput.files[0]);
+            } else {
+                alert('Please fill out all fields and select an image.');
+            }
+        });
+    } else {
+        console.error('Submit Button not found');
+    }
+});
