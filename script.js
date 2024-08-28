@@ -27,11 +27,11 @@ app.get('/blogs', (req, res) => {
 });
 
 app.get('/gallery', (req, res) => {
-    res.sendFile(__dirname + '/public/Hamlin/index.html');
+    res.sendFile(__dirname + '/public/Hamlin/gallery.html');
 });
 
 app.get('/about', (req, res) => {
-    res.sendFile(__dirname + '/public/Hamlin/gallery.html');
+    res.sendFile(__dirname + '/public/Hamlin/about.html');
 });
 
 app.post('/', (req, res) => {
