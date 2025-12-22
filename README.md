@@ -40,48 +40,33 @@ The project reflects real-world requirements of a functioning healthcare facilit
 ## 🚀 How to Run the Project Locally
 <img width="867" height="132" alt="image" src="https://github.com/user-attachments/assets/b548dd64-1722-43be-abaf-06e53314b6c7" />
 
-🎯 Purpose of the Project
+## 🎯 Purpose of the Project
 
 Build a real-world hospital website
-
 Practice frontend web development skills
-
 Design a professional healthcare interface
-
 Work with real client-style requirements
 
-Prepare for larger healthcare and telemedicine projects
-
-🔮 Possible Future Improvements
+## 🔮 Possible Future Improvements
 
 Online appointment booking
-
 Doctor profiles and availability
-
 Admin panel for managing content
-
 Backend integration for patient services
-
 Improved accessibility features
 
-Deployment as a fully live hospital website
-
-🧠 Key Learnings
+## 🧠 Key Learnings
 
 Designing for real institutions
-
 Structuring multi-page websites
-
 Creating healthcare-focused UI layouts
-
 Writing maintainable HTML and CSS
-
 Understanding user experience in medical platforms
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Abdirahman Dubow
-Computer Science Student
+Email: abdirahmandubow@gmail.com
 GitHub: https://github.com/Dubow
 
 
